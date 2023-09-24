@@ -1,0 +1,27 @@
+version: '3.9'
+services:
+  samp-server:
+    build:
+      dockerfile: Dockerfile
+    container_name: samp-container
+    ports:
+      - "7777:7777/udp"
+    volumes:
+      - ./samp-server:/samp-server
+    command: bash start.sh
+  mysql:
+    build:
+      context: mysql
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - db:/bitnami/mariadb/data
+    env_file:
+      - ./mysql/.env
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+volumes:
+  db:
+    driver: local

@@ -1,0 +1,17 @@
+/.vs
+/.vscode
+/filterscripts
+/gamemodes
+/include
+/logs
+/npcmodes
+/pawno
+/scriptfiles
+/announce
+/LICENSE
+/log-core.so
+/README
+/samp03svr
+/samp-npc
+/server.cfg
+/server_log.txt
