@@ -1,4 +1,9 @@
 # SA-MP Docker server
+
+Dependencies: \
+[SA-MP server](https://sa-mp.com "Official SA-MP site") \
+[MySQL Driver for pawn](https://github.com/pBlueG/SA-MP-MySQL "Original author repository")
+
 ```bash
 cp mysql/.env.example mysql/.env
 cp samp-server/server.cfg.example samp-server/server.cfg
