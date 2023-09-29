@@ -5,7 +5,7 @@ Dependencies: \
 [MySQL Driver for pawn](https://github.com/pBlueG/SA-MP-MySQL "Original author repository")
 
 ```bash
-wget http://files.sa-mp.com/samp037svr_R2-1.tar.gz
+wget https://samp.romzes.com/037rc/samp037svr_RC3.tar.gz
 tar -xzf samp037svr_R2-1.tar.gz
 cp -R samp03/* samp-server/
 rm -rf samp03/ samp037svr_R2-1.tar.gz
